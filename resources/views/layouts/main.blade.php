@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 
 <!--
-	Template:   Nui - Creative Portfolio Showcase HTML Website Template
-	Author:     Themetorium
-	URL:        https://themetorium.net/
+ Template:   Nui - Creative Portfolio Showcase HTML Website Template
+ Author:     Themetorium
+ URL:        https://themetorium.net/
 -->
 
 <html lang="en">
+
 <head>
 
     <!-- Title -->
-    <title>Limit @yield('page-title')</title>
+    <title>Limit - @yield('page-title')</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="description" content="Download Nui - Creative Portfolio Showcase HTML Website Template that comes with rich features and well-commented code. Made by Themetorium.">
+    <meta name="description"
+        content="Download Nui - Creative Portfolio Showcase HTML Website Template that comes with rich features and well-commented code. Made by Themetorium.">
     <meta name="author" content="themetorium.net">
 
     <!-- Mobile Meta -->
@@ -30,14 +32,20 @@
     <!-- Google fonts (https://www.google.com/fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"> <!-- Body font -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Secondary/Alter font -->
 
     <!-- Libs and Plugins CSS -->
-    <link rel="stylesheet" href="{{ asset('vendor/normalize/normalize.min.css') }}"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
-    <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/fontawesome-all.min.css') }}"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-    <link rel="stylesheet" href="{{ asset('vendor/swiper/css/swiper-bundle.min.css') }}"> <!-- Swiper CSS (https://swiperjs.com/) -->
-    <link rel="stylesheet" href="{{ asset('vendor/lightgallery/css/lightgallery.min.css') }}"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+    <link rel="stylesheet" href="{{ asset('vendor/normalize/normalize.min.css') }}">
+    <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
+    <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/fontawesome-all.min.css') }}">
+    <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+    <link rel="stylesheet" href="{{ asset('vendor/swiper/css/swiper-bundle.min.css') }}">
+    <!-- Swiper CSS (https://swiperjs.com/) -->
+    <link rel="stylesheet" href="{{ asset('vendor/lightgallery/css/lightgallery.min.css') }}">
+    <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
 
     <!-- Template master CSS -->
     <link rel="stylesheet" href="{{ asset('css/helper.css') }}">
@@ -47,37 +55,38 @@
 
 
 <!-- ===========
-	///// Body /////
-	================
-	* Use class "tt-boxed" to enable page boxed layout globally (affects all elements containing class "tt-wrap").
-	* Use class "tt-smooth-scroll" to enable page smooth scrolling.
-	* Use class "tt-transition" to enable page transitions.
-	* Use class "tt-magic-cursor" to enable magic cursor.
-	* Note: there may be classes that are specific to this page only!
-	-->
+ ///// Body /////
+ ================
+ * Use class "tt-boxed" to enable page boxed layout globally (affects all elements containing class "tt-wrap").
+ * Use class "tt-smooth-scroll" to enable page smooth scrolling.
+ * Use class "tt-transition" to enable page transitions.
+ * Use class "tt-magic-cursor" to enable magic cursor.
+ * Note: there may be classes that are specific to this page only!
+ -->
+
 <body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
 
 
     <!-- *************************************
-		*********** Begin body inner *************
-		************************************** -->
+  *********** Begin body inner *************
+  ************************************** -->
     <main id="body-inner">
 
         <!-- Begin page transition (do not remove!!!)
-			=========================== -->
+   =========================== -->
         <div id="page-transition">
             <div class="ptr-overlay"></div>
             <div class="ptr-preloader">
                 <div class="ptr-prel-content">
                     <!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-                    <img src="{{asset('img/logo-light.png')}}" class="ptr-prel-image tt-logo-light" alt="Logo">
+                    <img src="{{ asset('img/logo-light.png') }}" class="ptr-prel-image tt-logo-light" alt="Logo">
                 </div> <!-- /.ptr-prel-content -->
             </div> <!-- /.ptr-preloader -->
         </div>
         <!-- End page transition -->
 
         <!-- Begin magic cursor
-			======================== -->
+   ======================== -->
         <div id="magic-cursor">
             <div id="ball"></div>
         </div>
@@ -85,8 +94,8 @@
 
 
         <!-- *****************************************
-			*********** Begin scroll container ***********
-			****************************************** -->
+   *********** Begin scroll container ***********
+   ****************************************** -->
 
         @yield('page-content')
 
@@ -97,28 +106,28 @@
 
 
     <!-- ====================
-		///// Scripts below /////
-		===================== -->
+  ///// Scripts below /////
+  ===================== -->
 
     <!-- Core JS -->
-    <script src="{{ asset('vendor/jquery/jquery.min.js')}}"></script> <!-- jquery JS (https://jquery.com) -->
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script> <!-- jquery JS (https://jquery.com) -->
 
     <!-- Libs and Plugins JS -->
-    <script src="{{ asset('vendor/gsap/gsap.min.js')}}"></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
-    <script src="{{ asset('vendor/gsap/ScrollToPlugin.min.js')}}"></script> <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
-    <script src="{{ asset('vendor/gsap/ScrollTrigger.min.js')}}"></script> <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
+    <script src="{{ asset('vendor/gsap/gsap.min.js') }}"></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
+    <script src="{{ asset('vendor/gsap/ScrollToPlugin.min.js') }}"></script> <!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
+    <script src="{{ asset('vendor/gsap/ScrollTrigger.min.js') }}"></script> <!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
 
-    < src="{{ asset('vendor/smooth-scrollbar.js')}}">
-        </script> <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
-        <script src="{{ asset('vendor/swiper/js/swiper-bundle.min.js')}}"></script> <!-- Swiper JS (https://swiperjs.com/) -->
-        <script src="{{ asset('vendor/isotope/imagesloaded.pkgd.min.js')}}"></script> <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
-        <script src="{{ asset('vendor/isotope/isotope.pkgd.min.js')}}"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
-        <script src="{{ asset('vendor/isotope/packery-mode.pkgd.min.js')}}"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
-        <script src="{{ asset('vendor/lightgallery/js/lightgallery-all.min.js')}}"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
-        <script src="{{ asset('vendor/jquery.mousewheel.min.js')}}"></script> <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+    <script src="{{ asset('vendor/smooth-scrollbar.js') }}"></script> <!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
+    <script src="{{ asset('vendor/swiper/js/swiper-bundle.min.js') }}"></script> <!-- Swiper JS (https://swiperjs.com/) -->
+    <script src="{{ asset('vendor/isotope/imagesloaded.pkgd.min.js') }}"></script> <!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
+    <script src="{{ asset('vendor/isotope/isotope.pkgd.min.js') }}"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+    <script src="{{ asset('vendor/isotope/packery-mode.pkgd.min.js') }}"></script> <!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
+    <script src="{{ asset('vendor/lightgallery/js/lightgallery-all.min.js') }}"></script> <!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+    <script src="{{ asset('vendor/jquery.mousewheel.min.js') }}"></script>
+    <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
 
-        <!-- Template master JS -->
-        <script src="{{ asset('js/theme.js') }}"></script>
+    <!-- Template master JS -->
+    <script src="{{ asset('js/theme.js') }}"></script>
 
 
 

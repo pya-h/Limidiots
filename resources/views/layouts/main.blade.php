@@ -281,8 +281,8 @@
                                                 <div class="tt-ol-submenu">
                                                     <ul class="tt-ol-submenu-list">
 
-                                                        <li><a href="about-us.html">About Us</a></li>
-                                                        <li><a href="about-me.html">About Me</a></li>
+                                                        <li><a href="/aboutus">About Us</a></li>
+                                                        {{-- <li><a href="about-me.html">About Me</a></li> --}}
 
                                                     </ul> <!-- /.tt-ol-submenu-list -->
                                                 </div> <!-- /.tt-ol-submenu -->
@@ -381,12 +381,11 @@
                                             <li>
                                                 <h6 class="tt-ol-menu-social-heading">Social Links:</h6>
                                             </li>
-                                            <li><a href="https://www.facebook.com/themetorium" target="_blank" rel="noopener">Facebook</a></li>
-                                            <li><a href="https://twitter.com/Themetorium" target="_blank" rel="noopener">Twitter</a></li>
-                                            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">Youtube</a>
+                                            <li><a href="https://x.com/ZeweaStudio" target="_blank" rel="noopener">Twitter</a></li>
+                                            <li><a href="https://discord.com/invite/9398BdbP" target="_blank" rel="noopener">Discord</a>
                                             </li>
-                                            <li><a href="https://dribbble.com/Themetorium" target="_blank" rel="noopener">Dribbble</a></li>
-                                            <li><a href="https://www.behance.net/Themetorium" target="_blank" rel="noopener">Behance</a></li>
+                                            <li><a href="https://t.me/Zeweastudio" target="_blank" rel="noopener">Telegram</a></li>
+                                            <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank" rel="noopener">Reddit</a></li>
                                         </ul>
                                         <!-- End overlay menu social links -->
 
@@ -480,6 +479,92 @@
                     @yield('page-content')
 
 
+                    <div class="tt-section padding-top-xlg-150">
+                        <div class="tt-section-inner tt-wrap max-width-700">
+
+                            <!-- Begin tt-Heading
+                                        ======================
+                                        * Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+                                        * Use class "tt-heading-stroke" to enable stroke style.
+                                        * Use class "tt-heading-center" to align tt-Heading to center.
+                                        * Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+                                        -->
+                            <div class="tt-heading tt-heading-xxlg margin-bottom-8-p anim-fadeinup">
+                                <h3 class="tt-heading-subtitle">Get in Touch</h3>
+                                <h2 class="tt-heading-title">Let's Work<br> Together!</h2>
+                                <!-- You can use <br> to break a text line if needed -->
+                            </div>
+                            <!-- End tt-Heading -->
+
+                            <!-- Begin form
+                                        ================
+                                        * Use class "tt-form-filled" or "tt-form-minimal" to change form style.
+                                        * Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
+                                        -->
+                            <form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
+
+                                <!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
+                                <input type="hidden" name="project_name" value="yourwebsiteaddress.com">
+                                <!-- Change value to your site name -->
+                                <input type="hidden" name="admin_email" value="your@email.com">
+                                <!-- Change value to your valid email address (where a message will be sent) -->
+                                <input type="hidden" name="form_subject" value="Message from yourwebsiteaddress.com">
+                                <!-- Change value to your own message subject -->
+                                <!-- End Hidden Required Fields -->
+
+                                <div class="tt-row">
+                                    <div class="tt-col-md-6">
+
+                                        <div class="tt-form-group">
+                                            <label>Your Name <span class="required">*</span></label>
+                                            <input class="tt-form-control" type="text" name="Name" placeholder="" required>
+                                        </div>
+
+                                    </div> <!-- /.tt-col -->
+
+                                    <div class="tt-col-md-6">
+
+                                        <div class="tt-form-group">
+                                            <label>Email address <span class="required">*</span></label>
+                                            <input class="tt-form-control" type="email" name="Email" placeholder="" required>
+                                        </div>
+
+                                    </div> <!-- /.tt-col -->
+                                </div> <!-- /.tt-row -->
+
+                                <div class="tt-form-group">
+                                    <label>Subject <span class="required">*</span></label>
+                                    <input class="tt-form-control" type="text" name="Subject" placeholder="" required>
+                                </div>
+
+                                <!-- <div class="tt-form-group">
+                                          <label>Select an option <span class="required">*</span></label>
+                                          <select class="tt-form-control" name="option" required>
+                                           <option value="" disabled selected>Please choose an option</option>
+                                           <option value="Say Hello">Say hello</option>
+                                           <option value="New Project">New project</option>
+                                           <option value="Feedback">Feedback</option>
+                                           <option value="Other">Other</option>
+                                          </select>
+                                         </div> -->
+
+                                <div class="tt-form-group">
+                                    <label>Your Message <span class="required">*</span></label>
+                                    <textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
+                                </div>
+
+                                <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
+
+                                <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
+                                    <div data-hover="Send Message">Send Message</div>
+                                    <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                </button>
+                            </form>
+                            <!-- End form -->
+
+                        </div> <!-- /.tt-section-inner -->
+                    </div>
+                    <!-- End tt-section -->
                 </div>
                 <!-- End page content -->
 
@@ -502,27 +587,9 @@
 
                             </div> <!-- /.footer-col-inner -->
                         </div>
-                        <!-- Begin footer column -->
 
-                        <!-- Begin footer column
-       ========================= -->
-                        <div class="footer-col tt-align-center order-m-last">
-                            <div class="footer-col-inner">
 
-                                <div class="tt-copyright text-gray">
-                                    <a href="https://themetorium.net" target="_blank" rel="noopener" class="tt-btn tt-btn-link">
-                                        <span class="tt-btn-icon"><i class="far fa-copyright"></i></span>
-                                        <div data-hover="Themetorium.net">Themetorium.net</div>
-                                    </a> <a href="https://market.mrcode.ir" target="_blank" style="color:#0a0a0a">دانلود قالب
-                                        سایت</a>
-                                </div>
-
-                            </div> <!-- /.footer-col-inner -->
-                        </div>
-                        <!-- Begin footer column -->
-
-                        <!-- Begin footer column
-       ========================= -->
+                        <!-- Begin footer column ========================= -->
                         <div class="footer-col tt-align-center-right">
                             <div class="footer-col-inner">
 
@@ -530,11 +597,10 @@
                                     <div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
                                     <div class="social-buttons">
                                         <ul>
-                                            <li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
-                                            <li><a href="https://dribbble.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-dribbble"></i></a></li>
-                                            <li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-behance"></i></a></li>
+                                            <li><a href="https://x.com/ZeweaStudio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://t.me/Zeweastudio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a></li>
+                                            <li><a href="https://discord.com/invite/9398BdbP" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a></li>
+                                            <li><a href="https://www.reddit.com/u/ZeweaStudio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a></li>
                                         </ul>
                                     </div> <!-- /.social-buttons -->
                                 </div> <!-- /.footer-social -->

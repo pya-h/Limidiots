@@ -3,7 +3,7 @@
 <!--
  Template:   Nui - Creative Portfolio Showcase HTML Website Template
  Author:     Themetorium
- URL:        https://themetorium.net/
+ URL:        https://github.com/pya-h/
 -->
 
 <html lang="en">
@@ -15,8 +15,8 @@
 
     <!-- Meta -->
     <meta charset="utf-8">
-    <meta name="description" content="Download Nui - Creative Portfolio Showcase HTML Website Template that comes with rich features and well-commented code. Made by Themetorium.">
-    <meta name="author" content="themetorium.net">
+    <meta name="description" content="Limit - Zewea">
+    <meta name="author" content="github.com/pya-h">
 
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -293,7 +293,7 @@
             ==================================== -->
                                             <li class="tt-ol-submenu-wrap">
                                                 <div class="tt-ol-submenu-trigger">
-                                                    <a href="#">Blog</a>
+                                                    <a href="/roadmap">Roadmap</a>
                                                     <div class="tt-ol-submenu-caret-wrap">
                                                         <div class="tt-ol-submenu-caret magnetic-item"></div>
                                                     </div> <!-- /.tt-ol-submenu-caret-wrap -->

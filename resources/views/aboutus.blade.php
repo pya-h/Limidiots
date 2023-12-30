@@ -115,9 +115,9 @@
                         <div class="swiper-slide">
                             <div class="tt-content-carousel-item">
                                 <figure>
-                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/low-qlt-thumb.jpg') }}"
-                                        data-src="{{ asset('img/misc/misc-1.jpg') }}" alt="Image">
-                                    <!-- <figcaption>Image Caption</figcaption> -->
+                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/us/abolhokm.jpg') }}"
+                                        data-src="{{ asset('img/us/abolhokm.jpg') }}" alt="Image">
+                                        <figcaption>Abolhokmn</figcaption>
                                 </figure>
                             </div> <!-- /.tt-content-carousel-item -->
                         </div>
@@ -128,15 +128,15 @@
                         <div class="swiper-slide">
                             <div class="tt-content-carousel-item">
                                 <figure>
-                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/low-qlt-thumb.jpg') }}"
-                                        data-src="{{ asset('img/misc/misc-2.jpg') }}" alt="Image">
-                                    <!-- <figcaption>Image Caption</figcaption> -->
+                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/us/Daarhem.jpg') }}"
+                                        data-src="{{ asset('img/us/Daarhem.jpg') }}" alt="Image">
+                                        <figcaption>Daarhem</figcaption>
                                 </figure>
                             </div> <!-- /.tt-content-carousel-item -->
                         </div>
                         <!-- End swiper slide -->
 
-                        <!-- Begin swiper slide
+                        {{-- <!-- Begin swiper slide
                             ======================== -->
                         <div class="swiper-slide">
                             <div class="tt-content-carousel-item">
@@ -149,42 +149,16 @@
                                 </figure>
                             </div> <!-- /.tt-content-carousel-item -->
                         </div>
-                        <!-- End swiper slide -->
+                        <!-- End swiper slide --> --}}
 
                         <!-- Begin swiper slide
                             ======================== -->
                         <div class="swiper-slide">
                             <div class="tt-content-carousel-item">
                                 <figure>
-                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/low-qlt-thumb.jpg') }}"
-                                        data-src="{{ asset('img/misc/misc-3.jpg') }}" alt="Image">
-                                    <!-- <figcaption>Image Caption</figcaption> -->
-                                </figure>
-                            </div> <!-- /.tt-content-carousel-item -->
-                        </div>
-                        <!-- End swiper slide -->
-
-                        <!-- Begin swiper slide
-                            ======================== -->
-                        <div class="swiper-slide">
-                            <div class="tt-content-carousel-item">
-                                <figure>
-                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/low-qlt-thumb.jpg') }}"
-                                        data-src="{{ asset('img/misc/misc-4.jpg') }}" alt="Image">
-                                    <!-- <figcaption>Image Caption</figcaption> -->
-                                </figure>
-                            </div> <!-- /.tt-content-carousel-item -->
-                        </div>
-                        <!-- End swiper slide -->
-
-                        <!-- Begin swiper slide
-                            ======================== -->
-                        <div class="swiper-slide">
-                            <div class="tt-content-carousel-item">
-                                <figure>
-                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/low-qlt-thumb.jpg') }}"
-                                        data-src="{{ asset('img/misc/misc-5.jpg') }}" alt="Image">
-                                    <!-- <figcaption>Image Caption</figcaption> -->
+                                    <img class="tt-cc-image swiper-lazy" src="{{ asset('img/us/Impometutemopmi.jpg') }}"
+                                        data-src="{{ asset('img/us/Impometutemopmi.jpg') }}" alt="Image">
+                                        <figcaption>Impometutemopmi</figcaption>
                                 </figure>
                             </div> <!-- /.tt-content-carousel-item -->
                         </div>

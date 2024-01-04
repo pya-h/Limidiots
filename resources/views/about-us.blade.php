@@ -192,5 +192,5 @@
     <!-- End tt-section -->
 
 
-    @include('shared/services')
+    @include('segments/services')
 @endsection

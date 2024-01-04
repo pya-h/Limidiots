@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/aboutus', function() {
-    return view('aboutus');
+Route::get('/about-us', function() {
+    return view('about-us');
 });
 
 Route::get('/roadmap', function() {

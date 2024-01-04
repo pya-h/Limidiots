@@ -31,7 +31,8 @@
     <!-- Google fonts (https://www.google.com/fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> <!-- Body font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"> <!-- Body font -->
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Secondary/Alter font -->
 
@@ -77,7 +78,8 @@
             <div class="ptr-preloader">
                 <div class="ptr-prel-content">
                     <!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-                    <img src="{{ asset('img/logo-light.svg') }}" width="500px" height="500px" class="ptr-prel-image tt-logo-light" alt="Logo">
+                    <img src="{{ asset('img/logo-light.svg') }}" width="500px" height="500px"
+                        class="ptr-prel-image tt-logo-light" alt="Logo">
                 </div> <!-- /.ptr-prel-content -->
             </div> <!-- /.ptr-preloader -->
         </div>
@@ -112,9 +114,11 @@
                         <div class="tt-logo">
                             <a href="/">
                                 <!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-                                <img src="{{ asset('img/logo-light.svg') }}" class="tt-logo-light magnetic-item" alt="Logo">
+                                <img src="{{ asset('img/logo-light.svg') }}" class="tt-logo-light magnetic-item"
+                                    alt="Logo">
                                 <!-- logo light -->
-                                <img src="{{ asset('img/logo-dark.png') }}" class="tt-logo-dark magnetic-item" alt="Logo">
+                                <img src="{{ asset('img/logo-dark.png') }}" class="tt-logo-dark magnetic-item"
+                                    alt="Logo">
                                 <!-- logo dark -->
                             </a>
                         </div>
@@ -152,7 +156,28 @@
                                         <ul class="tt-ol-menu-list">
 
                                             <li class="active"><a href="/">Home</a></li>
+                                            <!-- Begin submenu (submenu master)
+            ==================================== -->
+                                            <li class="tt-ol-submenu-wrap">
+                                                <div class="tt-ol-submenu-trigger">
+                                                    <a href="#">About</a>
+                                                    <div class="tt-ol-submenu-caret-wrap">
+                                                        <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                    </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                </div> <!-- /.tt-ol-submenu-trigger -->
+                                                <div class="tt-ol-submenu">
+                                                    <ul class="tt-ol-submenu-list">
 
+                                                        <li><a href="/aboutus">About Us</a></li>
+                                                        <li><a href="/pydea.h">About Developer</a></li>
+
+                                                    </ul> <!-- /.tt-ol-submenu-list -->
+                                                </div> <!-- /.tt-ol-submenu -->
+                                            </li>
+                                            <!-- End submenu (sub-master) -->
+
+                                            <!-- Begin submenu (submenu master)
+            ==================================== -->
                                             <!-- Begin submenu (submenu master)
             ==================================== -->
                                             <li class="tt-ol-submenu-wrap">
@@ -166,20 +191,24 @@
                                                     <ul class="tt-ol-submenu-list">
 
                                                         <!-- Begin submenu
-               =================== -->
+=================== -->
                                                         <li class="tt-ol-submenu-wrap">
                                                             <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Portfolio List</a>
+                                                                <a href="#" class="tt-ol-submenu-link">Portfolio
+                                                                    List</a>
                                                                 <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                                    <div class="tt-ol-submenu-caret magnetic-item">
+                                                                    </div>
                                                                 </div> <!-- /.tt-ol-submenu-caret-wrap -->
                                                             </div> <!-- /.tt-ol-submenu-trigger -->
                                                             <div class="tt-ol-submenu">
                                                                 <ul class="tt-ol-submenu-list">
 
-                                                                    <li><a href="portfolio-list.html">Portfolio List v.1</a>
+                                                                    <li><a href="portfolio-list.html">Portfolio List
+                                                                            v.1</a>
                                                                     </li>
-                                                                    <li><a href="portfolio-list-alter.html">Portfolio List
+                                                                    <li><a href="portfolio-list-alter.html">Portfolio
+                                                                            List
                                                                             v.2</a></li>
 
                                                                 </ul> <!-- /.tt-ol-submenu-list -->
@@ -188,24 +217,29 @@
                                                         <!-- End submenu -->
 
                                                         <!-- Begin submenu
-               =================== -->
+=================== -->
                                                         <li class="tt-ol-submenu-wrap">
                                                             <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Portfolio Grid</a>
+                                                                <a href="#" class="tt-ol-submenu-link">Portfolio
+                                                                    Grid</a>
                                                                 <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                                    <div class="tt-ol-submenu-caret magnetic-item">
+                                                                    </div>
                                                                 </div> <!-- /.tt-ol-submenu-caret-wrap -->
                                                             </div> <!-- /.tt-ol-submenu-trigger -->
                                                             <div class="tt-ol-submenu">
                                                                 <ul class="tt-ol-submenu-list">
 
-                                                                    <li><a href="portfolio-grid-creative.html">Grid Creative</a>
+                                                                    <li><a href="portfolio-grid-creative.html">Grid
+                                                                            Creative</a>
                                                                     </li>
-                                                                    <li><a href="portfolio-grid-modern.html">Grid Modern</a>
+                                                                    <li><a href="portfolio-grid-modern.html">Grid
+                                                                            Modern</a>
                                                                     </li>
                                                                     <li><a href="portfolio-grid-portrait-mode.html">Grid
                                                                             Portrait Mode</a></li>
-                                                                    <li><a href="portfolio-grid-classic.html">Grid Classic</a>
+                                                                    <li><a href="portfolio-grid-classic.html">Grid
+                                                                            Classic</a>
                                                                     </li>
 
                                                                 </ul> <!-- /.tt-ol-submenu-list -->
@@ -214,13 +248,14 @@
                                                         <!-- End submenu -->
 
                                                         <!-- Begin submenu
-               =================== -->
+=================== -->
                                                         <li class="tt-ol-submenu-wrap">
                                                             <div class="tt-ol-submenu-trigger">
                                                                 <a href="#" class="tt-ol-submenu-link">Portfolio
                                                                     Interactive</a>
                                                                 <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                                    <div class="tt-ol-submenu-caret magnetic-item">
+                                                                    </div>
                                                                 </div> <!-- /.tt-ol-submenu-caret-wrap -->
                                                             </div> <!-- /.tt-ol-submenu-trigger -->
                                                             <div class="tt-ol-submenu">
@@ -239,13 +274,15 @@
                                                         <!-- End submenu -->
 
                                                         <!-- Begin submenu
-               =================== -->
+=================== -->
                                                         <li class="tt-ol-submenu-wrap">
                                                             <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Slider &amp;
+                                                                <a href="#" class="tt-ol-submenu-link">Slider
+                                                                    &amp;
                                                                     Carousel</a>
                                                                 <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                                    <div class="tt-ol-submenu-caret magnetic-item">
+                                                                    </div>
                                                                 </div> <!-- /.tt-ol-submenu-caret-wrap -->
                                                             </div> <!-- /.tt-ol-submenu-trigger -->
                                                             <div class="tt-ol-submenu">
@@ -268,109 +305,7 @@
                                                 </div> <!-- /.tt-ol-submenu -->
                                             </li>
                                             <!-- End submenu (sub-master) -->
-
-                                            <!-- Begin submenu (submenu master)
-            ==================================== -->
-                                            <li class="tt-ol-submenu-wrap">
-                                                <div class="tt-ol-submenu-trigger">
-                                                    <a href="#">About</a>
-                                                    <div class="tt-ol-submenu-caret-wrap">
-                                                        <div class="tt-ol-submenu-caret magnetic-item"></div>
-                                                    </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                </div> <!-- /.tt-ol-submenu-trigger -->
-                                                <div class="tt-ol-submenu">
-                                                    <ul class="tt-ol-submenu-list">
-
-                                                        <li><a href="/aboutus">About Us</a></li>
-                                                        {{-- <li><a href="about-me.html">About Me</a></li> --}}
-
-                                                    </ul> <!-- /.tt-ol-submenu-list -->
-                                                </div> <!-- /.tt-ol-submenu -->
-                                            </li>
-                                            <!-- End submenu (sub-master) -->
-
-                                            <!-- Begin submenu (submenu master)
-            ==================================== -->
-                                            <li class="tt-ol-submenu-wrap">
-                                                <div class="tt-ol-submenu-trigger">
-                                                    <a href="/roadmap">Roadmap</a>
-                                                    <div class="tt-ol-submenu-caret-wrap">
-                                                        <div class="tt-ol-submenu-caret magnetic-item"></div>
-                                                    </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                </div> <!-- /.tt-ol-submenu-trigger -->
-                                                <div class="tt-ol-submenu">
-                                                    <ul class="tt-ol-submenu-list">
-
-                                                        <!-- Begin submenu
-               =================== -->
-                                                        <li class="tt-ol-submenu-wrap">
-                                                            <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Blog List</a>
-                                                                <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
-                                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                            </div> <!-- /.tt-ol-submenu-trigger -->
-                                                            <div class="tt-ol-submenu">
-                                                                <ul class="tt-ol-submenu-list">
-
-                                                                    <li><a href="blog-classic.html">Blog Classic</a></li>
-                                                                    <li><a href="blog-classic-sidebar.html">Classic Sidebar</a>
-                                                                    </li>
-                                                                    <li><a href="blog-compact.html">Compact List</a></li>
-                                                                    <li><a href="blog-archive.html">Blog Archive</a></li>
-
-                                                                </ul> <!-- /.tt-ol-submenu-list -->
-                                                            </div> <!-- /.tt-ol-submenu -->
-                                                        </li>
-                                                        <!-- End submenu -->
-
-                                                        <!-- Begin submenu
-               =================== -->
-                                                        <li class="tt-ol-submenu-wrap">
-                                                            <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Blog Post</a>
-                                                                <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
-                                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                            </div> <!-- /.tt-ol-submenu-trigger -->
-                                                            <div class="tt-ol-submenu">
-                                                                <ul class="tt-ol-submenu-list">
-
-                                                                    <li><a href="blog-post.html">Single Post</a></li>
-                                                                    <li><a href="blog-post-classic-sidebar.html">Classic
-                                                                            Sidebar</a></li>
-                                                                    <li><a href="blog-post-no-featured-image.html">No Featured
-                                                                            Image</a></li>
-
-                                                                </ul> <!-- /.tt-ol-submenu-list -->
-                                                            </div> <!-- /.tt-ol-submenu -->
-                                                        </li>
-                                                        <!-- End submenu -->
-
-                                                    </ul> <!-- /.tt-ol-submenu-list -->
-                                                </div> <!-- /.tt-ol-submenu -->
-                                            </li>
-                                            <!-- End submenu (sub-master) -->
-
-                                            <!-- Begin submenu (submenu master)
-            ==================================== -->
-                                            <li class="tt-ol-submenu-wrap">
-                                                <div class="tt-ol-submenu-trigger">
-                                                    <a href="#">Contact</a>
-                                                    <div class="tt-ol-submenu-caret-wrap">
-                                                        <div class="tt-ol-submenu-caret magnetic-item"></div>
-                                                    </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                </div> <!-- /.tt-ol-submenu-trigger -->
-                                                <div class="tt-ol-submenu">
-                                                    <ul class="tt-ol-submenu-list">
-
-                                                        <li><a href="contact.html">Contact Form</a></li>
-                                                        <li><a href="contact-simple.html">Contact Simple</a></li>
-
-                                                    </ul> <!-- /.tt-ol-submenu-list -->
-                                                </div> <!-- /.tt-ol-submenu -->
-                                            </li>
-                                            <!-- End submenu (sub-master) -->
+                                            <li><a href="/roadmap">Roadmap</a></li>
 
                                         </ul>
                                         <!-- End menu list -->
@@ -381,11 +316,15 @@
                                             <li>
                                                 <h6 class="tt-ol-menu-social-heading">Social Links:</h6>
                                             </li>
-                                            <li><a href="https://x.com/ZeweaStudio" target="_blank" rel="noopener">Twitter</a></li>
-                                            <li><a href="https://discord.com/invite/9398BdbP" target="_blank" rel="noopener">Discord</a>
+                                            <li><a href="https://x.com/ZeweaStudio" target="_blank"
+                                                    rel="noopener">Twitter</a></li>
+                                            <li><a href="https://discord.com/invite/9398BdbP" target="_blank"
+                                                    rel="noopener">Discord</a>
                                             </li>
-                                            <li><a href="https://t.me/Zeweastudio" target="_blank" rel="noopener">Telegram</a></li>
-                                            <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank" rel="noopener">Reddit</a></li>
+                                            <li><a href="https://t.me/Zeweastudio" target="_blank"
+                                                    rel="noopener">Telegram</a></li>
+                                            <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank"
+                                                    rel="noopener">Reddit</a></li>
                                         </ul>
                                         <!-- End overlay menu social links -->
 
@@ -440,7 +379,9 @@
              <div class="ph-appear">Subtitle</div>
             </div> -->
                             <h1 class="ph-caption-title text-center">
-                                <div class="ph-appear"><em class="text-stroke-light"><span style="font-size: 1.7em;">L</span>iMi<span style="font-size: 2em;">t</span></em> Foundation<br>
+                                <div class="ph-appear"><em class="text-stroke-light"><span
+                                            style="font-size: 1.7em;">L</span>iMi<span
+                                            style="font-size: 2em;">t</span></em> Foundation<br>
                                     <span style="font-size:0.8em"><em class="text-stroke-light">ZeWea</em>Studio<span>
                                             <br>
                                             <span style="font-size:0.25em"><span class="hide-from-sm">→</span>
@@ -508,7 +449,8 @@
                                 <!-- Change value to your site name -->
                                 <input type="hidden" name="admin_email" value="your@email.com">
                                 <!-- Change value to your valid email address (where a message will be sent) -->
-                                <input type="hidden" name="form_subject" value="Message from yourwebsiteaddress.com">
+                                <input type="hidden" name="form_subject"
+                                    value="Message from yourwebsiteaddress.com">
                                 <!-- Change value to your own message subject -->
                                 <!-- End Hidden Required Fields -->
 
@@ -517,7 +459,8 @@
 
                                         <div class="tt-form-group">
                                             <label>Your Name <span class="required">*</span></label>
-                                            <input class="tt-form-control" type="text" name="Name" placeholder="" required>
+                                            <input class="tt-form-control" type="text" name="Name"
+                                                placeholder="" required>
                                         </div>
 
                                     </div> <!-- /.tt-col -->
@@ -526,7 +469,8 @@
 
                                         <div class="tt-form-group">
                                             <label>Email address <span class="required">*</span></label>
-                                            <input class="tt-form-control" type="email" name="Email" placeholder="" required>
+                                            <input class="tt-form-control" type="email" name="Email"
+                                                placeholder="" required>
                                         </div>
 
                                     </div> <!-- /.tt-col -->
@@ -534,7 +478,8 @@
 
                                 <div class="tt-form-group">
                                     <label>Subject <span class="required">*</span></label>
-                                    <input class="tt-form-control" type="text" name="Subject" placeholder="" required>
+                                    <input class="tt-form-control" type="text" name="Subject" placeholder=""
+                                        required>
                                 </div>
 
                                 <!-- <div class="tt-form-group">
@@ -553,7 +498,8 @@
                                     <textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
                                 </div>
 
-                                <small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
+                                <small class="tt-form-text"><em>Fields marked with an asterisk (*) are
+                                        required!</em></small>
 
                                 <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
                                     <div data-hover="Send Message">Send Message</div>
@@ -594,13 +540,22 @@
                             <div class="footer-col-inner">
 
                                 <div class="footer-social">
-                                    <div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
+                                    <div class="footer-social-text"><span>Follow</span><i
+                                            class="fas fa-share-alt"></i></div>
                                     <div class="social-buttons">
                                         <ul>
-                                            <li><a href="https://x.com/ZeweaStudio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="https://t.me/Zeweastudio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a></li>
-                                            <li><a href="https://discord.com/invite/9398BdbP" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-discord"></i></a></li>
-                                            <li><a href="https://www.reddit.com/u/ZeweaStudio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a></li>
+                                            <li><a href="https://x.com/ZeweaStudio" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li><a href="https://t.me/Zeweastudio" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i
+                                                        class="fab fa-telegram"></i></a></li>
+                                            <li><a href="https://discord.com/invite/9398BdbP" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
+                                            </li>
+                                            <li><a href="https://www.reddit.com/u/ZeweaStudio" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
+                                            </li>
                                         </ul>
                                     </div> <!-- /.social-buttons -->
                                 </div> <!-- /.footer-social -->

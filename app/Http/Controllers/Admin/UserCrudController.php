@@ -55,9 +55,24 @@ class UserCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(UserRequest::class);
+        CRUD::setValidation([
+            'name' => 'required|min:3|max:32',
+            'email' => 'required|email',
+            'password' => 'required|min:6|max:16|regex:/^(?=.*[A-Za-z])(?=.*\d).+$/',
+            // 'avatar' => 'url'
+        ]);
         CRUD::setFromDb(); // set fields from db columns.
 
+        // provie img field and image picker
+        CRUD::addField([
+            'name' => 'avatar',
+            'label' => 'Avatar',
+            'type' => 'upload',
+            'upload' => true,
+            'disk' => 'uploads', // Use the disk you want
+            'prefix' => 'avatars', // Specify the subdirectory
+            // add any other configurations you need
+        ]);
         /**
          * Fields can be defined using the fluent syntax:
          * - CRUD::field('price')->type('number');

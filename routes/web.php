@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\NFT;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $choosen_nfts = NFT::latest()->take(4)->get(); // TODO: or maybe take most populare ones!
+    $nftBasePath = 'uploads/nfts/';
+    return view('home', compact('choosen_nfts', 'nftBasePath'));
 });
 
 Route::get('/about-us', function() {

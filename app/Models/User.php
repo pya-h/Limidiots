@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Facades\Storage;
 
 class User extends Authenticatable
 {
@@ -48,4 +49,9 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    public function setAvatarAttribute($value)
+    {
+        $imgPath = Storage::disk('uploads')->putFile('avatars', $value);
+        $this->attributes['avatar'] = basename($imgPath);
+    }
 }

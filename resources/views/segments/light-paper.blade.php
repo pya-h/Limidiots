@@ -340,6 +340,29 @@
                                 Limit.</p>
                         </div> <!-- /.tt-accordion-content -->
                     </div> <!-- /.tt-accordion-item -->
+
+                    <div class="tt-accordion-item anim-fadeinup">
+                        <div class="tt-accordion-heading">
+                            <div class="tt-ac-head cursor-alter">
+                                <h3 class="tt-ac-head-title">Super AI assistant</h3>
+                                <!-- <div class="tt-accordion-subtext">Condimentum sit amet</div> -->
+                            </div>
+
+                            <div class="tt-accordion-caret-wrap">
+                                <div class="tt-accordion-caret-inner magnetic-item">
+                                    <div class="tt-accordion-caret"></div>
+                                </div>
+                            </div> <!-- /.tt-accordion-caret-wrap -->
+                        </div> <!-- /.tt-accordion-heading -->
+                        <div class="tt-accordion-content max-width-800">
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp; In a world of irrelevant and unfounded information, clarity in
+                                insight is an ability, and we understand that a super AI assistant who can learn at any
+                                moment can give us access to reliable news with proper analysis. <br />
+                                This super AI assistant with the authority given to him by his owner can do all the
+                                daily tasks at the request of his owner and announce the result. This assistant can be
+                                trained and will be a reliable companion.</p>
+                        </div> <!-- /.tt-accordion-content -->
+                    </div> <!-- /.tt-accordion-item -->
                 </div>
                 <!-- End accordion -->
 

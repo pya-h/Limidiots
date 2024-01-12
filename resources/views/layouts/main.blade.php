@@ -78,8 +78,8 @@
             <div class="ptr-preloader">
                 <div class="ptr-prel-content">
                     <!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-                    <img src="{{ asset('img/logo.png') }}"  {{--width="500px" height="500px" --}}
-                        class="ptr-prel-image tt-logo-light" alt="Logo">
+                    <img src="{{ asset('img/logo.png') }}" {{-- width="500px" height="500px" --}} class="ptr-prel-image tt-logo-light"
+                        alt="Logo">
                 </div> <!-- /.ptr-prel-content -->
             </div> <!-- /.ptr-preloader -->
         </div>
@@ -155,10 +155,12 @@
                                         <!-- Begin menu list -->
                                         <ul class="tt-ol-menu-list">
 
-                                            <li class="active"><a href="/">Home</a></li>
+                                            <li class="{{ request()->is('/') ? 'active' : '' }}"><a
+                                                    href="/">Home</a></li>
                                             <!-- Begin submenu (submenu master)
             ==================================== -->
-                                            <li class="tt-ol-submenu-wrap">
+                                            <li
+                                                class="tt-ol-submenu-wrap {{ request()->is('about-us') ? 'active' : '' }}">
                                                 <div class="tt-ol-submenu-trigger">
                                                     <a href="#">About</a>
                                                     <div class="tt-ol-submenu-caret-wrap">
@@ -305,7 +307,8 @@
                                                 </div> <!-- /.tt-ol-submenu -->
                                             </li>
                                             <!-- End submenu (sub-master) -->
-                                            <li><a href="/roadmap">Roadmap</a></li>
+                                            <li class="{{ request()->is('roadmap') ? 'active' : '' }}"><a
+                                                    href="/roadmap">Roadmap</a></li>
 
                                         </ul>
                                         <!-- End menu list -->
@@ -322,7 +325,9 @@
                                                     rel="noopener">Discord</a>
                                             </li>
                                             <li><a href="https://t.me/Zeweastudio" target="_blank"
-                                                    rel="noopener">Telegram</a></li>
+                                                    rel="noopener">Telegram Zewea</a></li>
+                                            <li><a href="https://t.me/LimitFoundation" target="_blank"
+                                                    rel="noopener">Telegram Limit</a></li>
                                             <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank"
                                                     rel="noopener">Reddit</a></li>
                                         </ul>
@@ -458,6 +463,9 @@
                                                     target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
                                             </li>
                                             <li><a href="https://t.me/Zeweastudio" class="magnetic-item"
+                                                    target="_blank" rel="noopener"><i
+                                                        class="fab fa-telegram"></i></a></li>
+                                            <li><a href="https://t.me/LimitFoundation" class="magnetic-item"
                                                     target="_blank" rel="noopener"><i
                                                         class="fab fa-telegram"></i></a></li>
                                             <li><a href="https://discord.com/invite/9398BdbP" class="magnetic-item"

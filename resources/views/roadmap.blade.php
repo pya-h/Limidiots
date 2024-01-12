@@ -1,6 +1,6 @@
 @extends('layouts/main')
 
-@section('page-title', 'Home')
+@section('page-title', 'Roadmap')
 
 @section('page-content')
 

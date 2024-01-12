@@ -78,7 +78,7 @@
             <div class="ptr-preloader">
                 <div class="ptr-prel-content">
                     <!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
-                    <img src="{{ asset('img//f-logo-dark.png') }}"  {{--width="500px" height="500px" --}}
+                    <img src="{{ asset('img/logo.png') }}"  {{--width="500px" height="500px" --}}
                         class="ptr-prel-image tt-logo-light" alt="Logo">
                 </div> <!-- /.ptr-prel-content -->
             </div> <!-- /.ptr-preloader -->
@@ -114,11 +114,11 @@
                         <div class="tt-logo">
                             <a href="/">
                                 <!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-                                <img src="{{ asset('img/f-logo-dark.png') }}" class="tt-logo-light magnetic-item"
+                                <img src="{{ asset('img/logo.png') }}" class="tt-logo-light magnetic-item"
                                     alt="Logo">
                                 <!-- logo light -->
-                                <img src="{{ asset('img/f-logo-dark.png') }}" class="tt-logo-dark magnetic-item"
-                                    alt="Logo">
+                                {{-- <img src="{{ asset('img/logo.png') }}" class="logo magnetic-item"
+                                    alt="Logo"> --}}
                                 <!-- logo dark -->
                             </a>
                         </div>

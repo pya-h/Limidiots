@@ -78,7 +78,7 @@
                             </div> <!-- /.tt-accordion-caret-wrap -->
                         </div> <!-- /.tt-accordion-heading -->
                         <div class="tt-accordion-content max-width-800">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;For the first time, we have taken an active role in the
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp; For the first time, we have taken an active role in the
                                 blockchain community as a mentor. A mentor in the network has a specific responsibility,
                                 so we have allocated a particular reward from the network's tokenomics towards it. The
                                 guide must educate individuals on entering the world of digital currency and always be
@@ -100,7 +100,7 @@
                             </div> <!-- /.tt-accordion-caret-wrap -->
                         </div> <!-- /.tt-accordion-heading -->
                         <div class="tt-accordion-content max-width-800">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;The governance of Super Blockchain is the responsibility of its
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp; The governance of Super Blockchain is the responsibility of its
                                 members and the community that forms it. To influence the network and its decisions, it
                                 is sufficient to have a verified digital identity and hold at least one token in your
                                 wallet.</p>
@@ -121,7 +121,7 @@
                             </div> <!-- /.tt-accordion-caret-wrap -->
                         </div> <!-- /.tt-accordion-heading -->
                         <div class="tt-accordion-content max-width-800">
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;We cannot provide a 100% guarantee of user privacy preservation in blockchain while
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp; We cannot provide a 100% guarantee of user privacy preservation in blockchain while
                                 facilitating optimal user utilization of the network. We are exploring biometric
                                 identity verification to allow users to easily register their identity on the network
                                 and, by invoking it, contribute information about their daily activities to the ledger

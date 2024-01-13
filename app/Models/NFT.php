@@ -31,7 +31,7 @@ class NFT extends Model
         $this->attributes['img'] = basename($imgPath);
     }
 
-    public function truncateDescription(int $maxLength = 16): ?string
+    public function truncateDescription(int $maxLength = 64): ?string
     {
         return !empty($this->description) && strlen($this->description) > $maxLength ? (Str::limit($this->description, $maxLength) . ' ...') : $this->description;
     }

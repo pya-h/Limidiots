@@ -191,7 +191,7 @@
                                                 <div class="tt-ol-submenu">
                                                     <ul class="tt-ol-submenu-list">
 
-                                                        <li><a href="/port-grid">Grid</a></li>
+                                                        <li><a href="/portfolio/grid">Grid</a></li>
                                                         {{-- <li><a href="/pydea.h">About Developer</a></li> --}}
 
                                                     </ul> <!-- /.tt-ol-submenu-list -->

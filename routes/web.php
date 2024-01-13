@@ -12,11 +12,13 @@ use App\Models\NFT;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+defined('NFT_BASE_PATH') or define('NFT_BASE_PATH', 'uploads/nfts/');
+
 
 Route::get('/', function () {
-    $choosen_nfts = NFT::latest()->take(4)->get(); // TODO: or maybe take most populare ones!
-    $nftBasePath = 'uploads/nfts/';
-    return view('pages/home', compact('choosen_nfts', 'nftBasePath'));
+    $nfts = NFT::latest()->take(4)->get(); // TODO: or maybe take most populare ones!
+    $nftBasePath = NFT_BASE_PATH;
+    return view('pages/home', compact('nfts', 'nftBasePath'));
 });
 
 Route::get('/about-us', function() {
@@ -25,4 +27,10 @@ Route::get('/about-us', function() {
 
 Route::get('/roadmap', function() {
     return view('pages/roadmap');
+});
+
+Route::get('/portfolio/grid', function() {
+    $nfts = NFT::latest()->get(); // TODO: or maybe take most populare ones!
+    $nftBasePath = NFT_BASE_PATH;
+    return view('pages/portfolio/portfolio-grid', compact('nfts', 'nftBasePath'));
 });

@@ -32,7 +32,7 @@
                                 -->
                 <div class="tt-grid ttgr-layout-creative-2 ttgr-gap-4">
 
-                    @include('segments/nft-grid')
+                    @include('pages/portfolio/nft/nft-grid')
 
                 </div>
                 <!-- End tt-Grid -->
@@ -44,7 +44,7 @@
 
                 <!-- Begin scrolling button (See all works)
                                          ============================ -->
-                <a href="portfolio-grid-creative.html" class="tt-scrolling-btn all-works-btn" data-cursor="All<br>Works">
+                <a href="/portfolio/grid" class="tt-scrolling-btn all-works-btn" data-cursor="All<br>Works">
                     <div class="scr-btn-inner ph-appear">
                         <div class="scr-btn-icon"><i class="fas fa-arrow-right"></i></div>
                         <div class="scr-btn-spinner">

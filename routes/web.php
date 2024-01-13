@@ -18,7 +18,8 @@ defined('NFT_BASE_PATH') or define('NFT_BASE_PATH', 'uploads/nfts/');
 Route::get('/', function () {
     $nfts = NFT::latest()->take(4)->get(); // TODO: or maybe take most populare ones!
     $nftBasePath = NFT_BASE_PATH;
-    return view('pages/home', compact('nfts', 'nftBasePath'));
+    $singleNftBaseRoute = 'portfolio/';
+    return view('pages/home', compact('nfts', 'nftBasePath', 'singleNftBaseRoute'));
 });
 
 Route::get('/about-us', function() {
@@ -32,5 +33,14 @@ Route::get('/roadmap', function() {
 Route::get('/portfolio/grid', function() {
     $nfts = NFT::latest()->get(); // TODO: or maybe take most populare ones!
     $nftBasePath = NFT_BASE_PATH;
-    return view('pages/portfolio/portfolio-grid', compact('nfts', 'nftBasePath'));
+    $singleNftBaseRoute = '';
+    return view('pages/portfolio/portfolio-grid', compact('nfts', 'nftBasePath', 'singleNftBaseRoute'));
+});
+
+Route::get('/portfolio/nft/{id}', function() {
+    $id = request()->route('id');
+    $nft = NFT::find($id);
+    $nftBasePath = NFT_BASE_PATH;
+
+    return view('pages/portfolio/nft/single-nft', compact('nft', 'nftBasePath'));
 });

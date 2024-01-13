@@ -103,7 +103,6 @@
     ========================
     * Use class "tt-header-fixed" to set header to fixed position.
     -->
-
             @include('common/menu')
             <!-- End header -->
             <!-- *************************************
@@ -112,99 +111,18 @@
             <div id="content-wrap">
 
 
-                <!-- ========================
-         ///// Begin page header /////
-         =============================
-         * Use class "ph-full" to enable fullscreen size (no effect on smaller screens!).
-         * Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
-         * Use class "ph-center" to enable content center position.
-         * Use class "ph-image-cropped" to crop image (if image is used). It uses fixed image dimensions (no effect with class "ph-bg-image"!).
-         * Use class "ph-bg-image" to enable page header background image. Note: "ph-caption-title-ghost" will be disabled if you enable this option!
-         * Use class "ph-bg-image-is-light" if needed, it makes the elements dark and more visible if you use a very light background image (effect only with class "ph-bg-image").
-         * Use class "ph-image-cover-*" to set image overlay opacity. For example "ph-image-cover-2" or "ph-image-cover-2-5" (up to "ph-image-cover-9-5").
-         * Use class "ph-content-parallax" to enable content parallax.
-         * Use class "ph-stroke" to enable caption title stroke style.
-         * Use class "ph-ghost-scroll" to enable the scroll effect to caption title ghost (no effect with class "ph-center"!).
-         -->
-                <div id="page-header" class="ph-full ph-cap-lg ph-ghost-scroll ph-image-cropped ph-content-parallax">
-                    <div class="page-header-inner tt-wrap">
-
-                        <!-- Begin page header image
-           ============================= -->
-                        <!-- <div class="ph-image">
-            <div class="ph-image-inner">
-             <img src="assets/img/page-header/ph-1.jpg" alt="Image">
-            </div>
-           </div> -->
-                        <!-- End page header image -->
-
-                        <!-- Begin page header caption
-           ===============================
-           Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
-           -->
-                        <div class="ph-caption">
-                            <!-- <div class="ph-caption-subtitle">
-             <div class="ph-appear">Subtitle</div>
-            </div> -->
-                            <h1 class="ph-caption-title text-center">
-                                <div class="ph-appear"><em class="text-stroke-light"><span
-                                            style="font-size: 1.7em;">L</span>iMi<span
-                                            style="font-size: 2em;">t</span></em> Foundation<br>
-                                    <span style="font-size:0.8em"><em class="text-stroke-light">ZeWea</em>Studio<span>
-                                            <br>
-                                            <span style="font-size:0.25em"><span class="hide-from-sm">→</span>
-                                                We are currently auctioning the Z collection
-                                            </span>
-                                </div>
-                            </h1>
-                            <div class="ph-caption-title-ghost">
-                                <div class="ph-appear">LIMIT<span class="hide-from-sm">→</span>ZEWEA</div>
-                            </div>
-                        </div>
-                        <!-- End page header caption -->
-
-                    </div> <!-- /.page-header-inner -->
-
-                    <!-- Begin scroll down (you can change "data-offset" to set scroll top offset)
-          ======================= -->
-                    <div class="tt-scroll-down">
-                        <a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
-                            <div class="tt-sd-arrow">
-                                <div class="tt-sd-arrow-inner"></div>
-                            </div>
-                            <div class="tt-sd-text">Scroll</div>
-                        </a>
-                    </div>
-                    <!-- End scroll down -->
-
-                </div>
-                <!-- End page header -->
+                @yield('page-content')
 
 
-                <!-- *************************************
-         *********** Begin page content ***********
-         ************************************** -->
-                <div id="page-content">
-                    @yield('page-content')
-
-
-                    @include('segments/contact-us')
-                </div>
-                <!-- End page content -->
-
+                {{-- @include('segments/contact-us') --}}
 
                 @include('common/footer')
-
-
             </div>
             <!-- End content wrap -->
         </div>
         <!-- End scroll container -->
     </main>
     <!-- End body inner -->
-
-
-
 
     <!-- ====================
   ///// Scripts below /////

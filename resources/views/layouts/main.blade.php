@@ -180,9 +180,8 @@
 
                                             <!-- Begin submenu (submenu master)
             ==================================== -->
-                                            <!-- Begin submenu (submenu master)
-            ==================================== -->
-                                            <li class="tt-ol-submenu-wrap">
+                                            <li
+                                                class="tt-ol-submenu-wrap {{ request()->is('portfolio') ? 'active' : '' }}">
                                                 <div class="tt-ol-submenu-trigger">
                                                     <a href="#">Portfolio</a>
                                                     <div class="tt-ol-submenu-caret-wrap">
@@ -192,120 +191,13 @@
                                                 <div class="tt-ol-submenu">
                                                     <ul class="tt-ol-submenu-list">
 
-                                                        <!-- Begin submenu
-=================== -->
-                                                        <li class="tt-ol-submenu-wrap">
-                                                            <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Portfolio
-                                                                    List</a>
-                                                                <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item">
-                                                                    </div>
-                                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                            </div> <!-- /.tt-ol-submenu-trigger -->
-                                                            <div class="tt-ol-submenu">
-                                                                <ul class="tt-ol-submenu-list">
-
-                                                                    <li><a href="portfolio-list.html">Portfolio List
-                                                                            v.1</a>
-                                                                    </li>
-                                                                    <li><a href="portfolio-list-alter.html">Portfolio
-                                                                            List
-                                                                            v.2</a></li>
-
-                                                                </ul> <!-- /.tt-ol-submenu-list -->
-                                                            </div> <!-- /.tt-ol-submenu -->
-                                                        </li>
-                                                        <!-- End submenu -->
-
-                                                        <!-- Begin submenu
-=================== -->
-                                                        <li class="tt-ol-submenu-wrap">
-                                                            <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Portfolio
-                                                                    Grid</a>
-                                                                <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item">
-                                                                    </div>
-                                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                            </div> <!-- /.tt-ol-submenu-trigger -->
-                                                            <div class="tt-ol-submenu">
-                                                                <ul class="tt-ol-submenu-list">
-
-                                                                    <li><a href="portfolio-grid-creative.html">Grid
-                                                                            Creative</a>
-                                                                    </li>
-                                                                    <li><a href="portfolio-grid-modern.html">Grid
-                                                                            Modern</a>
-                                                                    </li>
-                                                                    <li><a href="portfolio-grid-portrait-mode.html">Grid
-                                                                            Portrait Mode</a></li>
-                                                                    <li><a href="portfolio-grid-classic.html">Grid
-                                                                            Classic</a>
-                                                                    </li>
-
-                                                                </ul> <!-- /.tt-ol-submenu-list -->
-                                                            </div> <!-- /.tt-ol-submenu -->
-                                                        </li>
-                                                        <!-- End submenu -->
-
-                                                        <!-- Begin submenu
-=================== -->
-                                                        <li class="tt-ol-submenu-wrap">
-                                                            <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Portfolio
-                                                                    Interactive</a>
-                                                                <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item">
-                                                                    </div>
-                                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                            </div> <!-- /.tt-ol-submenu-trigger -->
-                                                            <div class="tt-ol-submenu">
-                                                                <ul class="tt-ol-submenu-list">
-
-                                                                    <li><a href="portfolio-interactive.html">Interactive
-                                                                            Classic</a></li>
-                                                                    <li><a href="portfolio-interactive-center.html">Interactive
-                                                                            Senter</a></li>
-                                                                    <li><a href="portfolio-interactive-inline.html">Interactive
-                                                                            Inline</a></li>
-
-                                                                </ul> <!-- /.tt-ol-submenu-list -->
-                                                            </div> <!-- /.tt-ol-submenu -->
-                                                        </li>
-                                                        <!-- End submenu -->
-
-                                                        <!-- Begin submenu
-=================== -->
-                                                        <li class="tt-ol-submenu-wrap">
-                                                            <div class="tt-ol-submenu-trigger">
-                                                                <a href="#" class="tt-ol-submenu-link">Slider
-                                                                    &amp;
-                                                                    Carousel</a>
-                                                                <div class="tt-ol-submenu-caret-wrap">
-                                                                    <div class="tt-ol-submenu-caret magnetic-item">
-                                                                    </div>
-                                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
-                                                            </div> <!-- /.tt-ol-submenu-trigger -->
-                                                            <div class="tt-ol-submenu">
-                                                                <ul class="tt-ol-submenu-list">
-
-                                                                    <li><a href="portfolio-fullscreen-slider.html">Fullscreen
-                                                                            Slider</a></li>
-                                                                    <li><a href="portfolio-fullscreen-carousel.html">Fullscreen
-                                                                            Carousel</a></li>
-
-                                                                </ul> <!-- /.tt-ol-submenu-list -->
-                                                            </div> <!-- /.tt-ol-submenu -->
-                                                        </li>
-                                                        <!-- End submenu -->
-
-                                                        <li><a href="portfolio-one-column.html">One Column</a></li>
-                                                        <li><a href="elements-classic-menu.html">Classic Menu</a></li>
+                                                        <li><a href="/port-grid">Grid</a></li>
+                                                        {{-- <li><a href="/pydea.h">About Developer</a></li> --}}
 
                                                     </ul> <!-- /.tt-ol-submenu-list -->
                                                 </div> <!-- /.tt-ol-submenu -->
                                             </li>
+                                            <!-- End submenu (sub-master) -->
                                             <!-- End submenu (sub-master) -->
                                             <li class="{{ request()->is('roadmap') ? 'active' : '' }}"><a
                                                     href="/roadmap">Roadmap</a></li>

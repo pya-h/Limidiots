@@ -16,13 +16,13 @@ use App\Models\NFT;
 Route::get('/', function () {
     $choosen_nfts = NFT::latest()->take(4)->get(); // TODO: or maybe take most populare ones!
     $nftBasePath = 'uploads/nfts/';
-    return view('home', compact('choosen_nfts', 'nftBasePath'));
+    return view('pages/home', compact('choosen_nfts', 'nftBasePath'));
 });
 
 Route::get('/about-us', function() {
-    return view('about-us');
+    return view('pages/about-us');
 });
 
 Route::get('/roadmap', function() {
-    return view('roadmap');
+    return view('pages/roadmap');
 });

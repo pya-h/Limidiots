@@ -305,7 +305,5 @@
 
         </div> <!-- /.tt-section-inner -->
     </div>
-    @include('segments/light-paper')
-
 
 @endsection

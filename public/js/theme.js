@@ -2889,24 +2889,6 @@
 	// (https://github.com/agragregra/uniMail)
 	// ========================================
 
-	// E-mail Ajax Send
-	$("#tt-contact-form").submit(function() { // Change (your contact form ID)
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", // Change (mail.php path)
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you. Your message has been sent!");
-			setTimeout(function() {
-			// Done Functions
-			th.trigger("reset");
-			}, 800);
-		});
-		return false;
-	});
-
-
 
 	// ======================================================================
 	// Template style switch
@@ -2943,7 +2925,7 @@
 
 	// Toggle light stylesheet
 	if ($("body").hasClass("tt-light-style-on")) {
-		$("head").append('<link id="tt-light-style" rel="stylesheet" href="assets/css/light-style.css">');
+		$("head").append('<link id="tt-light-style" rel="stylesheet" href="/css/light-style.css">');
 	} else {
 		$("#tt-light-style").remove();
 	}

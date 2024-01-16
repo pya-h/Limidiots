@@ -1,5 +1,5 @@
 <div class="tt-section padding-top-xlg-150">
-    <div class="tt-section-inner tt-wrap max-width-700">
+    <div id="contact-us-form" class="tt-section-inner tt-wrap max-width-700">
 
         <!-- Begin tt-Heading
                     ======================
@@ -20,25 +20,14 @@
                     * Use class "tt-form-filled" or "tt-form-minimal" to change form style.
                     * Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
                     -->
-        <form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
-
-            <!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
-            <input type="hidden" name="project_name" value="yourwebsiteaddress.com">
-            <!-- Change value to your site name -->
-            <input type="hidden" name="admin_email" value="your@email.com">
-            <!-- Change value to your valid email address (where a message will be sent) -->
-            <input type="hidden" name="form_subject"
-                value="Message from yourwebsiteaddress.com">
-            <!-- Change value to your own message subject -->
-            <!-- End Hidden Required Fields -->
-
+        <form class="tt-form-filled anim-fadeinup" method="post" action="{{ route('contact-us') }}">
+            @csrf
             <div class="tt-row">
                 <div class="tt-col-md-6">
 
                     <div class="tt-form-group">
                         <label>Your Name <span class="required">*</span></label>
-                        <input class="tt-form-control" type="text" name="Name"
-                            placeholder="" required>
+                        <input class="tt-form-control" type="text" name="your_name" placeholder="" value="{{old('your_name')}}" required>
                     </div>
 
                 </div> <!-- /.tt-col -->
@@ -47,17 +36,15 @@
 
                     <div class="tt-form-group">
                         <label>Email address <span class="required">*</span></label>
-                        <input class="tt-form-control" type="email" name="Email"
-                            placeholder="" required>
+                        <input class="tt-form-control" type="email" name="your_email" placeholder=""  value="{{old('your_email')}}" required>
                     </div>
 
                 </div> <!-- /.tt-col -->
             </div> <!-- /.tt-row -->
 
             <div class="tt-form-group">
-                <label>Subject <span class="required">*</span></label>
-                <input class="tt-form-control" type="text" name="Subject" placeholder=""
-                    required>
+                <label>Subject</label>
+                <input class="tt-form-control" type="text" name="your_subject" placeholder="" value="{{old('your_subject')}}">
             </div>
 
             <!-- <div class="tt-form-group">
@@ -73,16 +60,50 @@
 
             <div class="tt-form-group">
                 <label>Your Message <span class="required">*</span></label>
-                <textarea class="tt-form-control" rows="5" name="Message" placeholder="" required></textarea>
+                <textarea class="tt-form-control" rows="5" name="your_message" placeholder="" required>{{old('your_message')}}</textarea>
             </div>
+            @if (!$contact_result)
+                <small class="tt-form-text"><em>Fields marked with an asterisk (*) are
+                        required!</em></small>
 
-            <small class="tt-form-text"><em>Fields marked with an asterisk (*) are
-                    required!</em></small>
+                <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
+                    <div data-hover="Now!">Send Message</div>
+                    <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+            @elseif (!$contact_result['ok'])
+                <div class="alert alert-danger text-danger">
+                    <ul>
+                        @foreach ($contact_result['msg'] as $error)
+                            <li style="color: red !important">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
+                    <div data-hover="Again!">Send Message</div>
+                    <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+            @else
+                <h5 class="tt-form-text" style="color:{{ $contact_result['ok'] ? 'green' : 'red' }} !important">
+                    <em>{{ $contact_result['msg'] }}</em></h5>
+                {{-- <script>
+                    setTimeout(() => {
+                        var formElement = document.getElementById('contact-us-form');
+                        console.log(formElement)
 
-            <button type="submit" class="tt-btn tt-btn-primary margin-top-30">
-                <div data-hover="Send Message">Send Message</div>
-                <span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
-            </button>
+                        if (formElement) {
+                            if ('scrollBehavior' in document.documentElement.style) {
+                                formElement.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start'
+                                });
+                            } else {
+                                formElement.scrollIntoView();
+                            }
+                        }
+                    }, [1000]);
+                </script> --}}
+            @endif
+
         </form>
         <!-- End form -->
 

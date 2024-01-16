@@ -1,4 +1,4 @@
-@extends('layouts/single-project')
+@extends('layouts/no-header')
 
 @section('page-title', 'NFT')
 
@@ -8,18 +8,19 @@
         <div class="page-header-inner tt-wrap">
 
             <!-- Begin page header image
-       ============================= -->
+           ============================= -->
             <div class="ph-image">
                 <div class="ph-image-inner">
-                    <img style="display:flex !important; justify-content: center !important; align-items: center !important;" src="{{ asset($nftBasePath . $nft->img) }}" alt="Image">
+                    <img style="display:flex !important; justify-content: center !important; align-items: center !important;"
+                        src="{{ asset($nftBasePath . $nft->img) }}" alt="Image">
                 </div>
             </div>
             <!-- End page header image -->
 
             <!-- Begin page header caption
-       ===============================
-       Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
-       -->
+           ===============================
+           Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
+           -->
             <div class="ph-caption">
                 {{-- <div class="ph-categories">
                     <div class="ph-categories-inner ph-appear">
@@ -40,7 +41,7 @@
         </div> <!-- /.page-header-inner -->
 
         <!-- Begin scroll down (you can change "data-offset" to set scroll top offset)
-      ======================= -->
+          ======================= -->
         <div class="tt-scroll-down">
             <a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
                 <div class="tt-sd-arrow">
@@ -52,7 +53,7 @@
         <!-- End scroll down -->
 
         <!-- Begin page header share (share buttons are for design purposes only!)
-      ============================= -->
+          ============================= -->
         {{-- <div class="ph-share ph-appear">
 							<div class="ph-share-inner">
 								<div class="ph-share-trigger">
@@ -76,52 +77,53 @@
 
 
     <!-- *************************************
-     *********** Begin page content ***********
-     ************************************** -->
+         *********** Begin page content ***********
+         ************************************** -->
     <div id="page-content">
 
 
         <!-- =======================
-      ///// Begin tt-section /////
-      ============================
-      * You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-      -->
-      @if (!empty($nft->description))
-        <div class="tt-section padding-top-xlg-180 padding-left-sm-3-p padding-right-sm-3-p">
-            <div class="tt-section-inner tt-wrap">
+          ///// Begin tt-section /////
+          ============================
+          * You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+          -->
+        @if (!empty($nft->description))
+            <div class="tt-section padding-top-xlg-180 padding-left-sm-3-p padding-right-sm-3-p">
+                <div class="tt-section-inner tt-wrap">
 
-                <div class="tt-row">
-                    <div class="tt-col-lg-4 padding-right-md-5-p">
+                    <div class="tt-row">
+                        <div class="tt-col-lg-4 padding-right-md-5-p">
 
-                        <!-- Begin tt-Heading
-                        ======================
-                        * Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
-                        * Use class "tt-heading-stroke" to enable stroke style.
-                        * Use class "tt-heading-center" to align tt-Heading to center.
-                        * Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
-                        -->
-                        <div class="tt-heading tt-heading-xsmm margin-bottom-30 anim-fadeinup">
-                            <h2 class="tt-heading-title">Description</h2>
-                            <!-- You can use <br> to break a text line if needed -->
-                            <!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
-                        </div>
-                        <!-- End tt-Heading -->
-
-                    </div> <!-- /.tt-col -->
-
-                    <div class="tt-col-lg-8">
-
-                        <div class="anim-fadeinup">
-                            <h1 class="ph-caption-title">
-                                <div class="ph-appear">{{ $nft->title }}</div>
+                            <!-- Begin tt-Heading
+                            ======================
+                            * Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+                            * Use class "tt-heading-stroke" to enable stroke style.
+                            * Use class "tt-heading-center" to align tt-Heading to center.
+                            * Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+                            -->
+                            <div class="tt-heading tt-heading-xsmm margin-bottom-30 anim-fadeinup">
+                                <h2 class="tt-heading-title">Description</h2>
                                 <!-- You can use <br> to break a text line if needed -->
-                            </h1>
-                            <p>{{ $nft->description}}.</p>
-                        </div>
+                                <!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+                            </div>
+                            <!-- End tt-Heading -->
 
-                        <!-- Begin project info list
-                            ============================= -->
-                        {{-- <div class="project-info-list anim-fadeinup margin-top-40">
+                        </div> <!-- /.tt-col -->
+
+                        <div class="tt-col-lg-8">
+
+                            <div class="anim-fadeinup">
+                                <div class="tt-heading tt-heading-xsmm margin-bottom-30 anim-fadeinup">
+                                    <h2 class="tt-heading-title">{{ $nft->title }}</h2>
+                                    <!-- You can use <br> to break a text line if needed -->
+                                    <!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+                                </div>
+                                <p>{{ $nft->description }}.</p>
+                            </div>
+
+                            <!-- Begin project info list
+                                ============================= -->
+                            {{-- <div class="project-info-list anim-fadeinup margin-top-40">
 											<ul>
 												<li>
 													<div class="pi-list-heading">Client</div>
@@ -141,22 +143,22 @@
 												</li>
 											</ul>
 										</div> --}}
-                        <!-- End project info list -->
+                            <!-- End project info list -->
 
-                    </div> <!-- /.tt-col -->
-                </div> <!-- /.tt-row -->
+                        </div> <!-- /.tt-col -->
+                    </div> <!-- /.tt-row -->
 
-            </div> <!-- /.tt-section-inner -->
-        </div>
+                </div> <!-- /.tt-section-inner -->
+            </div>
         @endif
         <!-- End tt-section -->
 
 
         <!-- =======================
-      ///// Begin tt-section /////
-      ============================
-      * You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-      -->
+          ///// Begin tt-section /////
+          ============================
+          * You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+          -->
         {{-- <div class="tt-section no-padding">
             <div class="tt-section-inner">
 

@@ -20,25 +20,40 @@
             <div class="footer-col-inner">
 
                 <div class="footer-social">
-                    <div class="footer-social-text"><span>Follow</span><i
-                            class="fas fa-share-alt"></i></div>
+                    <div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
                     <div class="social-buttons">
                         <ul>
-                            <li><a href="https://x.com/ZeweaStudio" class="magnetic-item"
-                                    target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://t.me/Zeweastudio" class="magnetic-item"
-                                    target="_blank" rel="noopener"><i
-                                        class="fab fa-telegram"></i></a></li>
-                            <li><a href="https://t.me/LimitFoundation" class="magnetic-item"
-                                    target="_blank" rel="noopener"><i
-                                        class="fab fa-telegram"></i></a></li>
-                            <li><a href="https://discord.com/invite/9398BdbP" class="magnetic-item"
-                                    target="_blank" rel="noopener"><i class="fab fa-discord"></i></a>
-                            </li>
-                            <li><a href="https://www.reddit.com/u/ZeweaStudio" class="magnetic-item"
-                                    target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
-                            </li>
+                            @if (!request()->is('whoami'))
+                                <li><a href="https://x.com/ZeweaStudio" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://t.me/Zeweastudio" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-telegram"></i></a></li>
+                                <li><a href="https://t.me/LimitFoundation" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-telegram"></i></a></li>
+                                <li><a href="https://discord.com/invite/9398BdbP" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-discord"></i></a>
+                                </li>
+                                <li><a href="https://www.reddit.com/u/ZeweaStudio" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-reddit"></i></a>
+                                </li>
+                                <li><a href="https://github.com/pya-h" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-github"></i></a></li>
+                            @else
+                                <li><a href="https://t.me/pya_h" class="magnetic-item" target="_blank" rel="noopener"><i
+                                            class="fab fa-telegram"></i></a></li>
+                                <li><a href="https://github.com/pya-h" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-github"></i></a></li>
+
+                                <li><a href="https://t.me/pydea_rs" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-telegram"></i></a></li>
+                                <li><a href="https://github.com/pydea-rs" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fab fa-github"></i></a></li>
+
+                                <li><a href="mailto:thcplusplus@gmail.com" class="magnetic-item" target="_blank"
+                                        rel="noopener"><i class="fa fa-envelope"></i></a>
+                                </li>
+                            @endif
                         </ul>
                     </div> <!-- /.social-buttons -->
                 </div> <!-- /.footer-social -->

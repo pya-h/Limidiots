@@ -53,7 +53,8 @@
                                 <li class="{{ request()->is('/') ? 'active' : '' }}"><a href="/">Home</a></li>
                                 <!-- Begin submenu (submenu master)
 ==================================== -->
-                                <li class="tt-ol-submenu-wrap {{ request()->is('about-us') ? 'active' : '' }}">
+                                <li
+                                    class="tt-ol-submenu-wrap {{ request()->is('about-us') || request()->is('about-project') || request()->is('whoami') ? 'active' : '' }}">
                                     <div class="tt-ol-submenu-trigger">
                                         <a href="#">About</a>
                                         <div class="tt-ol-submenu-caret-wrap">
@@ -62,10 +63,12 @@
                                     </div> <!-- /.tt-ol-submenu-trigger -->
                                     <div class="tt-ol-submenu">
                                         <ul class="tt-ol-submenu-list">
-
-                                            <li><a href="/about-us">About Us</a></li>
-                                            <li><a href="/pydea.h">About Developer</a></li>
-
+                                            <li class="{{ request()->is('about-us') ? 'active' : '' }}"><a
+                                                    href="/about-us">About Us</a></li>
+                                            <li class="{{ request()->is('about-project') ? 'active' : '' }}"><a
+                                                    href="/about-project">About Project</a></li>
+                                            <li class="{{ request()->is('whoami') ? 'active' : '' }}"><a
+                                                    href="/whoami">About Developer</a></li>
                                         </ul> <!-- /.tt-ol-submenu-list -->
                                     </div> <!-- /.tt-ol-submenu -->
                                 </li>
@@ -73,7 +76,7 @@
 
                                 <!-- Begin submenu (submenu master)
 ==================================== -->
-                                <li class="tt-ol-submenu-wrap {{ request()->is('portfolio') ? 'active' : '' }}">
+                                <li class="tt-ol-submenu-wrap {{ request()->is('portfolio/grid') ? 'active' : '' }}">
                                     <div class="tt-ol-submenu-trigger">
                                         <a href="#">Portfolio</a>
                                         <div class="tt-ol-submenu-caret-wrap">
@@ -83,7 +86,8 @@
                                     <div class="tt-ol-submenu">
                                         <ul class="tt-ol-submenu-list">
 
-                                            <li><a href="/portfolio/grid">Grid</a></li>
+                                            <li class="{{ request()->is('portfolio/grid') ? 'active' : '' }}"><a
+                                                    href="/portfolio/grid">Grid</a></li>
                                             {{-- <li><a href="/pydea.h">About Developer</a></li> --}}
 
                                         </ul> <!-- /.tt-ol-submenu-list -->
@@ -100,19 +104,42 @@
                             <!-- Begin overlay menu social links
 ===================================== -->
                             <ul class="tt-ol-menu-social">
-                                <li>
-                                    <h6 class="tt-ol-menu-social-heading">Social Links:</h6>
-                                </li>
-                                <li><a href="https://x.com/ZeweaStudio" target="_blank" rel="noopener">Twitter</a></li>
-                                <li><a href="https://discord.com/invite/9398BdbP" target="_blank"
-                                        rel="noopener">Discord</a>
-                                </li>
-                                <li><a href="https://t.me/Zeweastudio" target="_blank" rel="noopener">Telegram Zewea</a>
-                                </li>
-                                <li><a href="https://t.me/LimitFoundation" target="_blank" rel="noopener">Telegram
-                                        Limit</a></li>
-                                <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank"
-                                        rel="noopener">Reddit</a></li>
+                                @if (!request()->is('whoami'))
+                                    <li>
+                                        <h6 class="tt-ol-menu-social-heading">Social Links:</h6>
+                                    </li>
+                                    <li><a href="https://x.com/ZeweaStudio" target="_blank" rel="noopener">Twitter</a>
+                                    </li>
+                                    <li><a href="https://discord.com/invite/9398BdbP" target="_blank"
+                                            rel="noopener">Discord</a>
+                                    </li>
+                                    <li><a href="https://t.me/Zeweastudio" target="_blank" rel="noopener">Telegram
+                                            Zewea</a>
+                                    </li>
+                                    <li><a href="https://t.me/LimitFoundation" target="_blank" rel="noopener">Telegram
+                                            Limit</a></li>
+                                    <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank"
+                                            rel="noopener">Reddit</a></li>
+
+                                    <li><a href="https://www.github.com/pya-h" target="_blank" rel="noopener">Developer
+                                            Github</a></li>
+                                @else
+                                    <li>
+                                        <h6 class="tt-ol-menu-social-heading">Social Links:</h6>
+                                    </li>
+                                    <li><a href="https://t.me/pydea_h" target="_blank" rel="noopener">Telegram
+                                            pydea.rs</a></li>
+                                    <li><a href="https://t.me/pya_h" target="_blank" rel="noopener">Telegram pya.h</a>
+                                    </li>
+
+                                    <li><a href="https://www.github.com/pya-h" target="_blank" rel="noopener">Github
+                                            pya.h</a></li>
+
+                                    <li><a href="https://www.github.com/pydea-rs" target="_blank" rel="noopener">Github
+                                            pydea.rs</a></li>
+
+                                    <li><a href="mailto:thcplusplus@gmail.com">Gmail: thcplusplus@gmail.com</a></li>
+                                @endif
                             </ul>
                             <!-- End overlay menu social links -->
 

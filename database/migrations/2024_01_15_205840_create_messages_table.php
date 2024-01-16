@@ -11,15 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('nfts', function (Blueprint $table) {
+        Schema::create('messages', function (Blueprint $table) {
             $table->id();
-            $table->string("title");
-            // $table->string("slug")->unique();
-            $table->text("description")->nullable();
-            $table->string("img");
-            $table->unsignedBigInteger('owner_id'); // reference to users table
-            $table->foreign('owner_id')->references('id')->on('users');
             $table->timestamps();
+            $table->string('sender');
+            $table->string('sender_email');
+            $table->string('subject')->nullable();
+            $table->text('text');
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('nfts');
+        Schema::dropIfExists('messages');
     }
 };

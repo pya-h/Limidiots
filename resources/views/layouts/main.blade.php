@@ -22,8 +22,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon (http://www.favicon-generator.org/) -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo.svg') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/logo.svg') }}" type="image/x-icon">
 
     <!-- Google Analytics -->
     <!-- Paste your Google Analytics code here (go to http://www.google.com/analytics/ for more information). -->
@@ -158,7 +158,11 @@
                                 </div>
                             </h1>
                             <div class="ph-caption-title-ghost">
-                                <div class="ph-appear">LIMIT<span class="hide-from-sm">→</span>ZEWEA</div>
+                                @if (request()->is('/'))
+                                    <div class="ph-appear">LIMIT<span class="hide-from-sm">→</span>ZEWEA</div>
+                                @else
+                                    <div class="ph-appear">@yield('page-title')</div>
+                                @endif
                             </div>
                         </div>
                         <!-- End page header caption -->
@@ -168,12 +172,23 @@
                     <!-- Begin scroll down (you can change "data-offset" to set scroll top offset)
           ======================= -->
                     <div class="tt-scroll-down">
-                        <a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
-                            <div class="tt-sd-arrow">
-                                <div class="tt-sd-arrow-inner"></div>
-                            </div>
-                            <div class="tt-sd-text">Scroll</div>
-                        </a>
+                        @if (!$contact_result)
+                            <a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
+                                <div class="tt-sd-arrow">
+                                    <div class="tt-sd-arrow-inner"></div>
+                                </div>
+                                <div class="tt-sd-text">Scroll</div>
+                            </a>
+                        @else
+                            <a href="#contact-us-form" class="tt-sd-inner ph-appear" data-offset="0">
+                                <div class="tt-sd-arrow">
+                                    <div class="tt-sd-arrow-inner"></div>
+                                </div>
+                                <div class="tt-sd-text"
+                                    style="color: {{ $contact_result['ok'] ? 'green' : 'red' }} !important; font-size: 200%;">
+                                    Scroll Into Contact Result</div>
+                            </a>
+                        @endif
                     </div>
                     <!-- End scroll down -->
 

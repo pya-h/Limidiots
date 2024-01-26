@@ -49,7 +49,7 @@
     <!-- Template master CSS -->
     <link rel="stylesheet" href="{{ asset('css/helper.css') }}">
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
-
+	<link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 </head>
 
 

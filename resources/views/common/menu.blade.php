@@ -67,8 +67,8 @@
                                                     href="/about-us">About Us</a></li>
                                             <li class="{{ request()->is('about-project') ? 'active' : '' }}"><a
                                                     href="/about-project">About Project</a></li>
-                                            <li class="{{ request()->is('whoami') ? 'active' : '' }}"><a
-                                                    href="/whoami">About Developer</a></li>
+                                            {{-- <li class="{{ request()->is('whoami') ? 'active' : '' }}"><a
+                                                    href="/whoami">About Developer</a></li> --}}
                                         </ul> <!-- /.tt-ol-submenu-list -->
                                     </div> <!-- /.tt-ol-submenu -->
                                 </li>
@@ -108,18 +108,16 @@
                                     <li>
                                         <h6 class="tt-ol-menu-social-heading">Social Links:</h6>
                                     </li>
-                                    <li><a href="https://x.com/ZeweaStudio" target="_blank" rel="noopener">Twitter</a>
+                                    <li><a href="https://opensea.io/ZeweaStudio" target="_blank"
+                                            rel="noopener">Opensea</a>
                                     </li>
-                                    <li><a href="https://discord.com/invite/9398BdbP" target="_blank"
+                                    <li><a href="https://x.com/ZeweaStudio" target="_blank" rel="noopener">X</a>
+                                    </li>
+                                    <li><a href="https://discord.gg/limitfound" target="_blank"
                                             rel="noopener">Discord</a>
                                     </li>
-                                    <li><a href="https://t.me/Zeweastudio" target="_blank" rel="noopener">Telegram
-                                            Zewea</a>
-                                    </li>
-                                    <li><a href="https://t.me/LimitFoundation" target="_blank" rel="noopener">Telegram
-                                            Limit</a></li>
-                                    <li><a href="https://www.reddit.com/u/ZeweaStudio" target="_blank"
-                                            rel="noopener">Reddit</a></li>
+                                    <li><a href="https://t.me/LimitFoundation" target="_blank"
+                                            rel="noopener">Telegram</a></li>
 
                                     <li><a href="https://www.github.com/pya-h" target="_blank" rel="noopener">Developer
                                             Github</a></li>

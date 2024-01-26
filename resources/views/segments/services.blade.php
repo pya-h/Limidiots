@@ -18,8 +18,7 @@
                         -->
                 <div class="tt-heading tt-heading-xlg anim-fadeinup">
                     <h3 class="tt-heading-subtitle">Our Services</h3>
-                    <h2 class="tt-heading-title"><span style="font-size: 1.7em;">L</span>iMi<span
-                            style="font-size: 2em;">t</span></h2>
+                    <h2 class="tt-heading-title"><span style="font-size: 1.5em;">L</span>imit</span></h2>
                     <!-- You can use <br> to break a text line if needed -->
                 </div>
                 <!-- End tt-Heading -->
@@ -82,7 +81,7 @@
                                 blockchain community as a mentor. A mentor in the network has a specific responsibility,
                                 so we have allocated a particular reward from the network's tokenomics towards it. The
                                 guide must educate individuals on entering the world of digital currency and always be
-                                ready for guidance."</p>
+                                ready for guidance.</p>
                         </div> <!-- /.tt-accordion-content -->
                     </div> <!-- /.tt-accordion-item -->
 

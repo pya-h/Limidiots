@@ -13,6 +13,10 @@ class NFT extends Model
     use CrudTrait;
     use HasFactory;
 
+    public static function getBaseRoute(): string {
+        return 'storage/nfts/';
+    }
+
     protected $table = 'nfts';
 
     protected $fillable = [
@@ -27,7 +31,7 @@ class NFT extends Model
 
     public function setImgAttribute($value)
     {
-        $imgPath = Storage::disk('uploads')->putFile('nfts', $value);
+        $imgPath = Storage::disk('public')->putFile('nfts', $value);
         $this->attributes['img'] = basename($imgPath);
     }
 

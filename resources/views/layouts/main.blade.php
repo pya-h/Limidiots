@@ -49,6 +49,7 @@
     <!-- Template master CSS -->
     <link rel="stylesheet" href="{{ asset('css/helper.css') }}">
     <link rel="stylesheet" href="{{ asset('css/theme.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
 </head>
 
@@ -148,9 +149,8 @@
             </div> -->
                             <h1 class="ph-caption-title text-center">
                                 <div class="ph-appear"><em class="text-stroke-light"><span
-                                            style="font-size: 1.7em;">L</span>iMi<span
-                                            style="font-size: 2em;">t</span></em> Foundation<br>
-                                    <span style="font-size:0.8em"><em class="text-stroke-light">ZeWea</em>Studio<span>
+                                            style="font-size: 1.5em;">L</span>imit</span></em> Foundation<br>
+                                    <span style="font-size:0.8em"><em class="text-stroke-light">ZeWea</em>Studios<span>
                                             <br>
                                             <span style="font-size:0.25em"><span class="hide-from-sm">→</span>
                                                 We are currently auctioning the Z collection

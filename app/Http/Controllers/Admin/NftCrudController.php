@@ -29,7 +29,7 @@ class NftCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Nft::class);
+        CRUD::setModel(\App\Models\NFT::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/nft');
         CRUD::setEntityNameStrings('nft', 'nfts');
 
@@ -93,7 +93,7 @@ class NftCrudController extends CrudController
             'label' => 'Image',
             'type' => 'upload',
             'upload' => true,
-            'disk' => 'uploads', // Use the disk you want
+            'disk' => 'public', // Use the disk you want
             'prefix' => 'nfts', // Specify the subdirectory
             // add any other configurations you need
         ]);

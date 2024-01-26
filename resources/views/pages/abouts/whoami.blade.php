@@ -7,7 +7,7 @@
         <div class="page-header-inner tt-wrap">
 
             <!-- Begin page header image
-                   ============================= -->
+                           ============================= -->
             <div class="ph-image">
                 <div class="ph-image-inner">
                     <style>
@@ -74,9 +74,9 @@
             <!-- End page header image -->
 
             <!-- Begin page header caption
-                   ===============================
-                   Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
-                   -->
+                           ===============================
+                           Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
+                           -->
             <div class="ph-caption">
                 {{-- <div class="ph-categories">
                     <div class="ph-categories-inner ph-appear">
@@ -113,19 +113,28 @@
             <div class="tt-section-inner tt-wrap max-width-900">
 
                 <div class="text-xxlg">
-                    <h2 class="anim-fadeinup">Hello, Friend!</h2>
+                    <h2 class="anim-fadeinup">Hello, Friend! THIS IS MY DESIGN.</h2>
 
-                    <p class="anim-fadeinup">I'm like god; I have many names and no image :) Well! call me whatever you like. It's my work that really matters. You can check me out here: <a href="https://github.com/pya-h" target="_blank" rel="noopener">PYA-H github</a>.</p>
+                    <p class="anim-fadeinup">I'm like god; I have many names and no picture :) Well! call me whatever you
+                        like. I don't care. It's my work that really matters.</p>
+                    <p class="anim-fadeinup">Please do not consider this one serious. This project is merely a joke for me,
+                        comparing to my <a href="https://github.com/pya-h" target="_blank" rel="noopener">OTHER
+                            Projects</a>.
+                        Believe me.</p>
 
-                    <p class="anim-fadeinup">I'm a Fullstack/Desktop/Mobile Developer, with more than 10 years of experience in programming, and still longing for learning more & more.</p>
+                    <p class="anim-fadeinup">I'm a Fullstack Developer, with more than 10 years of experience in
+                        programming, and still longing for learning more.</p>
 
-                    <p class="anim-fadeinup">This project is written in php, uses laravel framework and a cool template called Nui designed by Stephan Gordon.</p>
+                    <p class="anim-fadeinup">This project is written in php, uses laravel framework and a cool template
+                        called Nui designed by Stephan Gordon.</p>
+                    <p class="anim-fadeinup">I think I use each one of these so called names, while woking on a certain area
+                        and aspect. Each one is used for its special purposes. For example pya.h is
+                        used for serious and professional works, while pydea.rs is used for projects that are
+                        less professional, and mainly mathematical problems; or Maybe It's not about that and I'm just a
+                        freak with DID issues :)</p>
 
-                    <p class="anim-fadeinup">Each of these names i mentioned about myself, are used while woking on certain areas and purposes. For example pya.h is
-                                used for serious and professional works, while pydea.rs is used for projects that are
-                                less professional, and mainly mathematical problems; or maybe i'm just a freak with multipersonalities :)</p>
-
-                    <p class="anim-fadeinup">The social links section of the menu, and the follow section(bottom of page) of this page, Are the ways you can checkout and communicate with me.</p>
+                    <p class="anim-fadeinup">The social links section of the menu, and the follow section(bottom of page) of
+                        this page, Are the ways you can checkout and communicate with me.</p>
                 </div>
 
             </div> <!-- /.tt-section-inner -->

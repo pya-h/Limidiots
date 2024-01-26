@@ -185,7 +185,7 @@
                                     <div class="tt-sd-arrow-inner"></div>
                                 </div>
                                 <div class="tt-sd-text"
-                                    style="color: {{ $contact_result['ok'] ? 'green' : 'red' }} !important; font-size: 200%;">
+                                    style="color: {{ $contact_result['ok'] ? 'green' : 'red' }} !important; font-size: 175%;">
                                     Scroll Into Contact Result</div>
                             </a>
                         @endif

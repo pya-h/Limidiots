@@ -12,9 +12,9 @@
                     Use class "scr-text-reverse" to reverse scrolling direction.
                     Use class "scr-text-stroke" to enable text stroke style (no effect on smaller screens!).
                     -->
-        <div class="tt-scrolling-text" data-scroll-speed="10">
-            <div class="tt-scrolling-text-inner" data-text="LIKE TO DO THINGS NO ONE WOULD/COULD - PYDEA.H →">
-                LIKE TO DO THINGS NO ONE WOULD/COULD - PYDEA.H →
+        <div class="tt-scrolling-text" data-scroll-speed="9">
+            <div class="tt-scrolling-text-inner" data-text="We are currently auctioning the ZE collection ...">
+                We are currently auctioning the ZE collection ...
             </div> <!-- /.tt-scrolling-text-inner -->
         </div>
         <!-- End scrolling text -->
@@ -25,9 +25,9 @@
                     Use class "scr-text-reverse" to reverse scrolling direction.
                     Use class "scr-text-stroke" to enable text stroke style (no effect on smaller screens!).
                     -->
-        <div class="tt-scrolling-text scr-text-stroke scr-text-reverse" data-scroll-speed="10">
-            <div class="tt-scrolling-text-inner" data-text="Over 10 years of busting my lonely ass off →">
-                Over 10 years of busting mf my lonely programmer ass off →
+        <div class="tt-scrolling-text scr-text-stroke scr-text-reverse" data-scroll-speed="9">
+            <div class="tt-scrolling-text-inner" data-text="THIS IS MY DESIGN → PYA.H ←">
+                THIS IS MY DESIGN → PYA.H ←
             </div> <!-- /.tt-scrolling-text-inner -->
         </div>
         <!-- End scrolling text -->

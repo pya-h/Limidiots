@@ -67,8 +67,8 @@
                                                     href="/about-us">About Us</a></li>
                                             <li class="{{ request()->is('about-project') ? 'active' : '' }}"><a
                                                     href="/about-project">About Project</a></li>
-                                            {{-- <li class="{{ request()->is('whoami') ? 'active' : '' }}"><a
-                                                    href="/whoami">About Developer</a></li> --}}
+                                            <li class="{{ request()->is('whoami') ? 'active' : '' }}"><a
+                                                    href="/whoami">About Developer</a></li>
                                         </ul> <!-- /.tt-ol-submenu-list -->
                                     </div> <!-- /.tt-ol-submenu -->
                                 </li>
@@ -88,7 +88,6 @@
 
                                             <li class="{{ request()->is('portfolio/grid') ? 'active' : '' }}"><a
                                                     href="/portfolio/grid">Grid</a></li>
-                                            {{-- <li><a href="/pydea.h">About Developer</a></li> --}}
 
                                         </ul> <!-- /.tt-ol-submenu-list -->
                                     </div> <!-- /.tt-ol-submenu -->

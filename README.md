@@ -27,8 +27,7 @@
     <li>Move others php files to your desired named folder [such as DESIRED_DIR; This will be used in next step]; do not put them in /public_html  !</li>
     <li>Change all require routes in index.php as: <br>&nbsp;&nbsp;&nbsp;&nbsp; require_once __DIR__ '/../DESIRED_DIR/[Require Actual PATH]'</li>
     <li>Create a symlink to upload folder with 'ln -s ~/DESIRED_DIR/storage/app/public/ ~/public_html/storage</li>
-    <li>Open terminal cd to your DESIRED folder and run composer and database migrations commands, such as:</li>
-    <li>
+    <li>Open terminal cd to your DESIRED folder and run composer and database migrations commands, such as:<br />
         <ul>
             <li>composer install</li>
             <li>php artisan config:cache</li>

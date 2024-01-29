@@ -1,5 +1,8 @@
 ## Limit Project
 
+# First launch at Jan 16 2024: 
+- Check it out: https://limit.foundation
+- Im hiding there: https://limit.foundation/whoami Oops. I handed over myself i think.
 # PHP Laravel
 
 -   Landing website for a newbie crypto group.
